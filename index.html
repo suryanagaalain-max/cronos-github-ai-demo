@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronos - AI Assistant Showcase</title>
+    <title>Chronicle - AI Assistant Showcase</title>
     <style>
         :root {
             --bg-color: #0f172a;
@@ -64,7 +64,7 @@
     <!-- 1. HERO SECTION -->
     <header>
         <div class="badge"><span class="dot"></span> Status: Active & Ready 24/7</div>
-        <h1>⏳ Cronos</h1>
+        <h1>📜 Chronicle</h1>
         <p>Sekretaris pribadi pintar yang mengatur jadwal, mengingatkan agenda harian, serta merangkum hasil rapat, email, dan artikel Anda secara otomatis.</p>
     </header>
 
@@ -132,21 +132,21 @@
                 <button class="btn-sim" onclick="runSim('rapat')">📝 Rangkum Hasil Rapat</button>
             </div>
             <div class="chat-box" id="chatBox">
-                <div class="msg bot">Pilih salah satu skenario di atas untuk memulai simulasi bersama Cronos.</div>
+                <div class="msg bot">Pilih salah satu skenario di atas untuk memulai simulasi bersama Chronicle.</div>
             </div>
         </div>
     </section>
 
     <!-- 5. FOOTER & CTA -->
     <footer>
-        <a href="https://wa.me/628112108698" target="_blank" class="btn-cta">Hubungi Cronos via WhatsApp</a>
+        <a href="https://wa.me/628112108698" target="_blank" class="btn-cta">Hubungi Chronicle via WhatsApp</a>
         <p>Built with AI · AI Builder Bootcamp Showcase</p>
     </footer>
 
     <script>
         const scenarios = {
             jadwal: {
-                user: "Cronos, ada agenda apa saja untuk saya hari ini?",
+                user: "Chronicle, ada agenda apa saja untuk saya hari ini?",
                 bot: "Hari ini Anda memiliki 2 agenda:\n1. 10:00 WIB - Meeting Proyek (Google Meet)\n2. 15:00 WIB - Review Dokumen\n\nJadwal aman dan tidak ada yang bentrok!"
             },
             ultah: {
@@ -154,7 +154,7 @@
                 bot: "Ada! Bapak Budi (Klien Utama) ulang tahun besok. Saya telah menyiapkan draf ucapan di WhatsApp. Kirim sekarang? (Human-in-the-Loop)"
             },
             rapat: {
-                user: "Cronos, tolong buatkan rangkuman dari Google Meet tadi.",
+                user: "Chronicle, tolong buatkan rangkuman dari Google Meet tadi.",
                 bot: "Rangkuman selesai & tersimpan di Google Drive!\n• Poin utama: Peluncuran produk dimajukan ke hari Jumat.\n• Action Item: Desain landing page harus selesai hari ini."
             }
         };
@@ -163,7 +163,7 @@
             const chatBox = document.getElementById('chatBox');
             const data = scenarios[type];
             
-            chatBox.innerHTML = `<div class="msg user">${data.user}</div><div class="typing">Cronos sedang mengetik...</div>`;
+            chatBox.innerHTML = `<div class="msg user">${data.user}</div><div class="typing">Chronicle sedang mengetik...</div>`;
             
             setTimeout(() => {
                 chatBox.innerHTML = `
